@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.result {
+  display: flex;
+  background-color: green;
+  margin: 0;
+  border: 1px solid black;
+}
+
+
+.thumbnail {
+padding: 5px;
+}
+
+.title {
+overflow:hidden;
+font-weight: bold;
+}
