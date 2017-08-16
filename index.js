@@ -10,7 +10,8 @@ function getDataFromApi(searchTerm, callback) {
       q: searchTerm,
       /*part: 'recipes'*/
     };
-  return  $.getJSON(RECIPE_SEARCH_URL, settings, callback);
+  /*return  $.getJSON(RECIPE_SEARCH_URL, settings, callback);*/
+  $.getJSON(RECIPE_SEARCH_URL, settings, callback);
 }
 
 /*http://food2fork.com/api/search?key=e97290b2e3d47f42045192359ee16f4e&q=duck*/
