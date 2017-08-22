@@ -22,10 +22,7 @@ body {
 
 .result {
   display: flex;
-  /*background-color: green;*/
   margin: 0;
-  /*border: 1px solid black;*/
-  /*border: 1px solid #d9d9d9;*/
   margin-bottom: 20px;
 }
 
@@ -39,7 +36,6 @@ input {
 }
 
 .recipelabel {
-  /*padding: 20px;*/
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
@@ -72,37 +68,7 @@ input {
   font-size: 90%;
 }
 
-/*.ingredients {
-  position: absolute;
-  background-color: green;
-  width: 200px;
-  height: 100px;
-  display: block;
-  /* Position Information */
-/* Appearance Information} */
 
-
-/*.reclist {
-  display:none;
-}
-.recipelabel:hover .reclist { display: block; }*/
-
-/*.ingredients > .label {
-   Position Information 
-   Appearance Information 
-}*/
-
-/*.ingredients > .reclist {
-position: fixed;
-/*visibility: hidden;*/
-/* Position Information */
-/* Appearance Information */
-/*}*/ 
-
-/*.ingredients > .label:hover + .reclist {
-display: block;
-z-index: 200;
-}*/
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: gray;
