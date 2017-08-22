@@ -49,7 +49,7 @@ input {
 .label, .source {
   font-size: 12px;
   border: 1px solid #d9d9d9;
-  background-color: #a80000;
+  background-color: #A80000;
   font-family: Georgia,"Times New Roman",serif;
   font-weight: bold;
   color: white;
@@ -61,15 +61,26 @@ input {
   letter-spacing: 1px
 }
 
-.ingredients {
+.reclist {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+}
+
+/*.ingredients {
   position: absolute;
   background-color: green;
   width: 200px;
   height: 100px;
-  display: none;
+  display: block;
   /* Position Information */
-/* Appearance Information */
-}
+/* Appearance Information} */
+
 
 /*.reclist {
   display:none;
@@ -81,17 +92,17 @@ input {
    Appearance Information 
 }*/
 
-.ingredients > .reclist {
+/*.ingredients > .reclist {
 position: fixed;
 /*visibility: hidden;*/
 /* Position Information */
 /* Appearance Information */
-} 
+/*}*/ 
 
-.ingredients > .label:hover + .reclist {
+/*.ingredients > .label:hover + .reclist {
 display: block;
 z-index: 200;
-}
+}*/
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: gray;

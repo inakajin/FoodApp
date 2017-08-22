@@ -16,7 +16,7 @@ function getDataFromApi(searchTerm, callback) {
 
 const template = {
   item: function(item) {
-    console.log(item.recipe.ingredientLines);
+    /*console.log(item.recipe.ingredientLines);*/
    /* var htmlOutput = "";
     $.each(item); {
       htmlOutput += 
@@ -27,12 +27,8 @@ const template = {
     /*item.recipe.url = url.replace(/^http:\/\//i, 'https://');*/
     return '<div class ="col-4">' +
               '<div class ="result">' +
-                  '<div class="ingredients">' +
-                    '<div class="ingredientslist">' +
-                      '<div class="reclist">' + item.recipe.ingredients + '</div>' +
-                    '</div><!-- end ingredients -->' +
-                  '</div><!-- end ingredientslist -->' +
                 '<div class="recipelabel">' +
+                  '<div class="reclist">' + item.recipe.ingredientLines + '</div><!-- end reclist -->' +
                   '<p class="label">' + item.recipe.label + '</p>' +
                     '<div class="thumbnail">' + 
                       '<a href='+ item.recipe.url +'"target="_blank">' +
@@ -40,8 +36,8 @@ const template = {
                       '</a>' +
                     '<div class="recipesource">' +
                       '<p class="source">' + item.recipe.source + '</p>' +
-                    '</div>' +
-                  '</div>' +
+                    '</div><!-- end recipesource -->' +
+                  '</div><!-- end thumbnail -->' +
                 '</div><!-- end recipelabel -->' +
               '</div><!-- end result -->' + 
             '</div><!-- end col-4 -->';
@@ -78,6 +74,26 @@ function displayRecipeSearchData(data) {
   }
   $('#js-search-results').html(results);
 }
+
 //Cleans the url
+
+//hover behavior for ingredients pop-up
+$(function(event) {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $('div.recipelabel').hover(function(e) {
+  console.log("*****");
+    $('div.reclist').show();
+  }, function() {
+    $('div.reclist').hide();
+  });
+
+  $('div.recipelabel').mousemove(function(e) {
+    $("div.reclist").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+  });
+
+});
+
 
 $(searchSubmit);
