@@ -2,23 +2,112 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: #ffbf00;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  border:1px solid black;
+}
+
+header h1 {
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
 body {
   padding-top: 50px;
 }
 
 .result {
   display: flex;
-  background-color: green;
+  /*background-color: green;*/
   margin: 0;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  /*border: 1px solid #d9d9d9;*/
+  margin-bottom: 20px;
+}
+
+input {
+  width: 300px;
+  height: 50px;
+} 
+
+.thumbnail img {
+  width: 100%;
+}
+
+.recipelabel {
+  /*padding: 20px;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  border: 1px solid #d9d9d9;
+}
+
+.label, .source {
+  font-size: 12px;
+  border: 1px solid #d9d9d9;
+  background-color: red;
+  font-family: Georgia,"Times New Roman",serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  /*color: #600;*/
+  line-height: 22px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px
+}
+
+.ingredients {
+  position: absolute;
+  background-color: green;
+  width: 200px;
+  height: 100px;
+  display: none;
+  /* Position Information */
+/* Appearance Information */
+}
+
+/*.reclist {
+  display:none;
+}
+.recipelabel:hover .reclist { display: block; }*/
+
+/*.ingredients > .label {
+   Position Information 
+   Appearance Information 
+}*/
+
+.ingredients > .reclist {
+position: fixed;
+/*visibility: hidden;*/
+/* Position Information */
+/* Appearance Information */
+} 
+
+.ingredients > .label:hover + .reclist {
+display: block;
+z-index: 200;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: gray;
+  font-style: italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+  font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+  font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: gray;
+  font-style: italic;
 }
 
 
-.thumbnail {
-padding: 5px;
-}
-
-.title {
-overflow:hidden;
-font-weight: bold;
-}

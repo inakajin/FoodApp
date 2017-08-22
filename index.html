@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -9,20 +9,22 @@
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
         <link href="index.css" rel="stylesheet" type="text/css" />
+        <link href="float-grid.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-      <main>
-        <h1>Recipe Search</h1>
+      <header>
+        <h1>What's in the fridge?</h1>
           <form action="#" class="js-search-form">
             <label for="query"></label>
-            <input type="text" class="js-query">
-            <button type="submit">Search</button>
+            <input type="text" class="js-query" placeholder="chicken broccoli garlic etc..." required  autocomplete="on"><br><br>
+            <button type="submit">Find a recipe</button>
           </form>
-          
-          <h2>Results</h2>
-          <div class="js-search-results">
-            
-          </div>
+      </header>
+      <main>
+        
+        <div class="row" id="js-search-results">
+        
+        </div>
       </main>
       <script src="index.js"></script>
     </body>
