@@ -14,12 +14,18 @@ header {
 header h1 {
   line-height: 1;
   margin-bottom: 10px;
+  font-family: Georgia,"Times New Roman",serif;
 }
 
 body {
   padding-top: 50px;
 }
 
+footer {
+  text-align: center;
+  font-style: italic;
+  font-family: Georgia,"Times New Roman",serif;
+}
 .result {
   display: flex;
   margin: 0;
@@ -29,17 +35,30 @@ body {
 input {
   width: 300px;
   height: 50px;
+  font-family: Georgia,"Times New Roman",serif;
+  font-size: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 } 
+
+button {
+  font-family: Georgia,"Times New Roman",serif;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 12px;
+}
 
 .thumbnail img {
   width: 100%;
 }
 
-.recipelabel {
-  margin-top: 0;
-  margin-bottom: 0;
+.recipelabel, .recipesource {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 16px;
   border: 1px solid #d9d9d9;
+  /*height:25px;*/
 }
 
 .label, .source {
@@ -50,7 +69,6 @@ input {
   font-weight: bold;
   color: white;
   text-align: center;
-  /*color: #600;*/
   line-height: 22px;
   margin: 0;
   text-transform: uppercase;

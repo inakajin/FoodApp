@@ -18,9 +18,9 @@ const template = {
               '<div class ="result">' +
                 '<div class="recipelabel">' +
                   '<div class="reclist">' + item.recipe.ingredientLines + '</div><!-- end reclist -->' +
-                  '<p class="label">' + item.recipe.label + '</p>' +
+                    '<p class="label">' + item.recipe.label + '</p>' +
                     '<div class="thumbnail">' + 
-                      '<a href="'+ item.recipe.url + '" target="_blank">' +
+                      '<a href="'+ httpsTransform(item.recipe.url) + '" target="_blank">' +
                       '<img src="' + item.recipe.image + '"alt="' + item.recipe.label + '">' +
                       '</a>' +
                     '<div class="recipesource">' +
@@ -58,15 +58,18 @@ function displayRecipeSearchData(data) {
 }
 
 //Cleans the url
-//function /*item.recipe.url = url.replace(/^http:\/\//i, 'https://');*/
+function httpsTransform(url) {
+  return url.replace(/^http:\/\//i, 'https://');
+}
+
 
 //hover behavior for ingredients pop-up
 $(function() {
   searchSubmit();
-  $('body').on('mouseenter','div.recipelabel',function(e) {
-    $(this).children('div.reclist').show();
-  }).on('mouseleave','div.recipelabel',function(e){
-    $(this).children('div.reclist').hide();
+  $('body').on('mouseenter','p.label',function(e) {
+    $(this).siblings('div.reclist').show();
+  }).on('mouseleave','p.label',function(e){
+    $(this).siblings('div.reclist').hide();
   });
 });
 
