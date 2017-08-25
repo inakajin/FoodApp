@@ -45,14 +45,34 @@ function searchSubmit() {
   });
 }
 //if(i % 3 === 0 ){ results. += '<div class="row">''</div>'}
-//let
+//for (var i=0; i<data.hits; i++)
 //render results
-function displayRecipeSearchData(data) {
+/*function displayRecipeSearchData(data) {
   var results = ' ';
   if (data.hits.length) {
     data.hits.forEach(function(item) {
       results += template.item(item);
     });
+  }
+  else {
+    results += '<p> No results </p>';
+  }
+  $('#js-search-results').html(results);
+}*/
+
+function displayRecipeSearchData(data) {
+  var results = ' ', row = '';
+  if (data.hits.length) {
+    data.hits.forEach(function(item, i) {
+      row += template.item(item);
+      if (i % 3 == 2) { // wrap row and add to result
+        results += '<div class="row">' + row + '</div>';
+        row = '';
+      }
+    });
+    if (row.length) { // flush remainder into a row
+      results += '<div class="row">' + row + '</div>';
+    }
   }
   else {
     results += '<p> No results </p>';
