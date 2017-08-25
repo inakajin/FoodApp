@@ -44,22 +44,8 @@ function searchSubmit() {
     getDataFromApi(searchTarget,displayRecipeSearchData);
   });
 }
-//if(i % 3 === 0 ){ results. += '<div class="row">''</div>'}
-//for (var i=0; i<data.hits; i++)
-//render results
-/*function displayRecipeSearchData(data) {
-  var results = ' ';
-  if (data.hits.length) {
-    data.hits.forEach(function(item) {
-      results += template.item(item);
-    });
-  }
-  else {
-    results += '<p> No results </p>';
-  }
-  $('#js-search-results').html(results);
-}*/
 
+//Render display
 function displayRecipeSearchData(data) {
   var results = ' ', row = '';
   if (data.hits.length) {
@@ -84,7 +70,6 @@ function displayRecipeSearchData(data) {
 function httpsTransform(url) {
   return url.replace(/^http:\/\//i, 'https://');
 }
-
 
 //hover behavior for ingredients pop-up
 $(function() {
