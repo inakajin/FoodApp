@@ -6,6 +6,8 @@ const RECIPE_SEARCH_URL = 'https://api.edamam.com/search';
 function getDataFromApi(searchTerm, callback) {
   const settings = {
       q: searchTerm,
+      from: '0',
+      to: '12',
       app_id: 'cc3ee280',
       app_key: 'e93e9043178ce874680226c6ce8acc49',
     };
@@ -42,17 +44,18 @@ function searchSubmit() {
     getDataFromApi(searchTarget,displayRecipeSearchData);
   });
 }
-
+//if(i % 3 === 0 ){ results. += '<div class="row">''</div>'}
+//let
 //render results
 function displayRecipeSearchData(data) {
   var results = ' ';
-  if (data.hits) {
+  if (data.hits.length) {
     data.hits.forEach(function(item) {
       results += template.item(item);
     });
   }
   else {
-    results += '<p>No results</p>';
+    results += '<p> No results </p>';
   }
   $('#js-search-results').html(results);
 }
