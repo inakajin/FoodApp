@@ -26,5 +26,6 @@ The source of the recipe is displayed at the bottom of the search result:<br>
 * Responsive design was from float-grid css.
 * The API leveraged is https://developer.edamam.com/.
 * Aria compliance was validated by the aXe plugin available from Dequelabs at https://github.com/dequelabs/axe-core.
+* The application was created as learning exercise for the online bootcamp available through https://www.thinkful.com/.
 
 
