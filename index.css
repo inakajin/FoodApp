@@ -31,7 +31,9 @@ header p {
 }
 
 .foodimg {
-  height: 350px;
+  /*max-width: 300px;
+  max-height: 414px;
+  height: auto;*/
   width: 100%;
   /*height: auto;*/
 }
