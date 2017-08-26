@@ -44,8 +44,9 @@ function searchSubmit() {
   });
 }
 
-function renderList(ingredientLines) { 
 
+//Convert the array of ingredientLines into a bulleted list
+function renderList(ingredientLines) { 
   var returnList="<ul>";
   ingredientLines.forEach(function(ingredient){
   returnList += "<li>"+ingredient+"</li>";
@@ -80,7 +81,7 @@ function httpsTransform(url) {
   return url.replace(/^http:\/\//i, 'https://');
 }
 
-//hover behavior for ingredients pop-up
+//hover behavior for ingredients pop-up and readies the document
 $(function() {
   searchSubmit();
   $('body').on('mouseenter','p.label',function(e) {

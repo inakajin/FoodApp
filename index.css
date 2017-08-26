@@ -28,14 +28,13 @@ header p {
   border: 1px solid #d9d9d9;
   margin-bottom: 20px;
   position: relative;
+  height:200px;
+  overflow: hidden;
+  vertical-align: center;
 }
 
 .foodimg {
-  /*max-width: 300px;
-  max-height: 414px;
-  height: auto;*/
   width: 100%;
-  /*height: auto;*/
 }
 
 .overlay {
