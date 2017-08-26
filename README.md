@@ -21,6 +21,10 @@ The source of the recipe is displayed at the bottom of the search result:<br>
 ![alt text](https://github.com/inakajin/FridgeForage/blob/master/pics/searchsource.jpg?raw=true)
 
 ## Technologies Used
-The application was written using HTML, CSS, JavaScript, and JQuery. The API leveraged is https://developer.edamam.com/.
+* The application was written using HTML, CSS, JavaScript, and JQuery. 
+* Separate CSS and HTML files were used for the landing page and applicationpage.
+* Responsive design was from float-grid css.
+* The API leveraged is https://developer.edamam.com/.
+* Aria compliance was validated by the aXe plugin available from Dequelabs at https://github.com/dequelabs/axe-core.
 
 
