@@ -14,6 +14,8 @@ function getDataFromApi(searchTerm, callback) {
   $.getJSON(RECIPE_SEARCH_URL, settings, callback);
 }
 
+
+//This is a template used to push html to the DOM
 const template = {
   item: function(item) {
     return '<div class ="col-4">' +
@@ -76,12 +78,12 @@ function displayRecipeSearchData(data) {
   $('#js-search-results').html(results);
 }
 
-//Cleans the url
+//Cleans the url by changing http to https where applicable
 function httpsTransform(url) {
   return url.replace(/^http:\/\//i, 'https://');
 }
 
-//hover behavior for ingredients pop-up and readies the document
+//Hover behavior for ingredients pop-up and readies the document
 $(function() {
   searchSubmit();
   $('body').on('mouseenter','p.label',function(e) {
