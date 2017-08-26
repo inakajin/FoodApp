@@ -1,10 +1,10 @@
-#FridgeForage
+# FridgeForage
 The FridgeForage app is used to find recipes that match what you have on hand.
 
-##Summary
+## Summary
 The application is used to search for recipes. A user enters search terms, consisting of ingredients that have, or want, to use and submits the search. Results are returned to the user. The results are comprosed of up to 12 recipes, depending on the number of matches. The user can hover the cursor over a recipe title to see a list of all ingredients required. Clicking on the image in any result willtake the user to the source URL for the recipe.
 
-##Screenshots
+## Screenshots
 The user enters search terms here and clicks the Find Recipe button:<br>
 ![alt text](https://github.com/inakajin/FridgeForage/blob/master/pics/searchshot.jpg?raw=true)
 
@@ -20,7 +20,7 @@ If a user clicks on a recipe image, they are redirected to the source URL of the
 The source of the recipe is displayed at the bottom of the search result:<br>
 ![alt text](https://github.com/inakajin/FridgeForage/blob/master/pics/searchsource.jpg?raw=true)
 
-##Technologies Used
+## Technologies Used
 The application was written using HTML, CSS, JavaScript, and JQuery. The API leveraged is https://developer.edamam.com/.
 
 
