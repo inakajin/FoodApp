@@ -5,17 +5,22 @@
 header {
   background-color: #ffbf00;
   margin-bottom: 40px;
-  font-family: Verdana, "Geneva", sans-serif; 
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  border:1px solid black; 
 }
 
 header h1 {
   line-height: 1;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  font-family: Verdana, "Geneva", sans-serif;
   font-weight: bold;
 }
 
 header p {
   margin-top: 0.5em;
+  font-family: Verdana, "Geneva", sans-serif;
 }
 
 .card {
@@ -25,6 +30,7 @@ header p {
 }
 
 .foodimg {
+  height: 350px;
   width: 100%;
   /*height: auto;*/
 }
