@@ -1,10 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Recipe Search</title>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <link href="float-grid.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-	
+	<header>
+    <div class="row">
+      <div class="col-12">
+        <h1>App Name</h1>
+        <p>Find something to make with what you have on hand</p>
+      </div>
+    </div>
+	</header>
+
+	<div class="row">
+    	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/AWEH8SQCHN.jpg" alt="Picture of a burger">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">I want to try</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+
+     	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="pics/searchshot.png" alt="Picture of application search feature">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">Simply enter the ingredients you have available</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+
+     	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/LDMEHW1TYG.jpg" alt="Picture of salmon filets">
+          		<div class="overlay">
+          			<div class="overlaytext"><a href="app.html" target="_blank">I want to try</a></div>
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+	</div><!-- end row -->
+
+		<div class="row">
+    	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="pics/searchresult.png" alt="Picture of a search result">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">Recipes that have the ingredients you searched for are returned</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+
+     	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/280h/6OWCQIHAAL.jpg" alt="Picture of pancakes">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">I want to try</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+
+     	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="pics/searchingredients.png" alt="Picture of ingredients pop-up box">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">Hover over the recipe title to see a list of all ingredients</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+	</div><!-- end row -->
+
+	<div class="row">
+    	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/280h/3LKSND9M5T.jpg" alt="Picture of citrus fruit">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">I want to try</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+
+     	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="pics/searchimage.png" alt="Picture of ingredients pop-up box">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">Click on the recipe image to go directly to the recipe</a></div>	
+          		</div><!-- end overlay -->
+
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+
+     	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/280h/NIRVEY04MU.jpg" alt="Picture of bagel with cream cheese">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">I want to try</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+	</div><!-- end row -->
+
+	<div class="row">
+    	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/280h/GI3XTVX4EQ.jpg" alt="Picture of bacon">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">I want to try</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+
+     	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/280h/2KQJOOFAF3.jpg" alt="Picture of vegetable tartine">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">I want to try</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+
+     	<div class="col-4">
+        	<div class="card">
+          		<img class="foodimg" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/280h/75TIOJXZEF.jpg" alt="Picture of clams">
+          		<div class="overlay">
+          			<a href="app.html" target="_blank">
+          			<div class="overlaytext"><a href="app.html" target="_blank">I want to try</a></div>	
+          		</div><!-- end overlay -->
+       		</div><!-- end card -->
+     	</div><!-- end col-4 -->
+	</div><!-- end row -->
+	<footer>
+        <small>Created by Mike Dickerson using the <a href="https://developer.edamam.com/">edamam.com</a> API</small>
+    </footer>
 </body>
 </html>

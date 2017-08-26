@@ -40,7 +40,6 @@ function searchSubmit() {
   $('.js-search-form').submit(event=> {
     event.preventDefault();
     const searchTarget = $(event.currentTarget).find('.js-query').val().trim();
-    console.log('search:'+searchTarget);
     getDataFromApi(searchTarget,displayRecipeSearchData);
   });
 }
