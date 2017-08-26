@@ -19,7 +19,7 @@ const template = {
     return '<div class ="col-4">' +
               '<div class ="result">' +
                 '<div class="recipelabel">' +
-                  '<div class="reclist">' + item.recipe.ingredientLines + '</div><!-- end reclist -->' +
+                  '<div class="reclist">' + renderList(item.recipe.ingredientLines) + '</div><!-- end reclist -->' +
                     '<p class="label">' + item.recipe.label + '</p>' +
                     '<div class="thumbnail">' + 
                       '<a href="'+ httpsTransform(item.recipe.url) + '" target="_blank">' +
@@ -42,6 +42,16 @@ function searchSubmit() {
     const searchTarget = $(event.currentTarget).find('.js-query').val().trim();
     getDataFromApi(searchTarget,displayRecipeSearchData);
   });
+}
+
+function renderList(ingredientLines) { 
+
+  var returnList="<ul>";
+  ingredientLines.forEach(function(ingredient){
+  returnList += "<li>"+ingredient+"</li>";
+  })
+  returnList += "</ul>";
+  return returnList;
 }
 
 //Render display
