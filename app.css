@@ -22,12 +22,6 @@ body {
   padding-top: 50px;
 }
 
-footer {
-  text-align: center;
-  font-style: italic;
-  font-family: Verdana, "Geneva", sans-serif;
-}
-
 .result {
   display: flex;
   margin: 0;
@@ -89,6 +83,40 @@ button {
   color: #000000;
   border: 1px solid #1a1a1a;
   font-size: 90%;
+}
+
+/*This is the footer section*/
+footer {
+  text-align: center;
+  font-style: italic;
+  font-family: Verdana, "Geneva", sans-serif;
+  margin: 10%;
+}
+
+.footercontainer {
+  max-width: 400px;
+  max-height: 400px;
+  background-color: #DEDEDE;
+  border: 1px solid gray;
+  margin: auto;
+  padding: 10px;
+}
+
+.footerpic {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+}
+
+.social-links ul, li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.social-images {
+  width: 21px;
+  height: 19px;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
