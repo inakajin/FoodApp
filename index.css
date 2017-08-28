@@ -81,6 +81,7 @@ footer {
   max-height: 400px;
   background-color: #DEDEDE;
   border: 1px solid gray;
+  border-radius: 25px;
   margin: auto;
   padding: 10px;
 }
