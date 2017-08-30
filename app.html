@@ -8,17 +8,23 @@
           src="https://code.jquery.com/jquery-3.2.1.min.js"
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
-        <link href="app.css" rel="stylesheet" type="text/css" />
+        <link href="index.css" rel="stylesheet" type="text/css" />
         <link href="float-grid.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
       <header>
+        <div class = "row">
+        <div class = "col-6">
         <h1>What's in the fridge?</h1>
+        </div>
+        <div class = "col-6">
           <form action="" class="js-search-form">
             <label for="query"></label>
             <input type="text" aria-label="enter ingredients" class="js-query" placeholder="chicken broccoli garlic etc..." required  autocomplete="on"><br><br>
             <button type="submit">Find a recipe</button>
           </form>
+        </div>
+      </div>
       </header>
       <main>       
         <div id="js-search-results">
@@ -26,42 +32,49 @@
         </div><!-- end js-search-results -->
       </main>
       <footer>
-      <div class="footercontainer">         
-          <small>Created by Mike Dickerson using the <a href="https://developer.edamam.com/">edamam.com</a> API</small>
-            <ul class="social-links">
-                <li class="social-list">
-                  <img class="footerpic" src="pics/footerpic.jpg" alt="Picture of the developer, Mike Dickerson">
-                </li>
-                <li class="social-list">
-                  <a href="https://www.linkedin.com/in/mikeadickerson/" target="_blank" aria-label="This is a link Mike Dickerson's linkedin profile">
-                    <img class="social-images" src="pics/linkedin.png" alt="linkedin logo">
-                  </a>
-                </li>
-                <li class="social-list">
-                  <a href="https://www.facebook.com/mike.dickerson.1422" target="_blank" aria-label="This is a link Mike Dickerson's Facebook profile">
-                    <img class="social-images" src="pics/facebook.png" alt="facebook logo">
-                  </a>
-                </li>
-                <li class="social-list">
-                  <a href="https://plus.google.com/u/1/112774374102749420649?pageId=none" target="_blank" aria-label="This is a link Mike Dickerson's Google Plus Profile">
-                    <img class="social-images" src="pics/googleplus.png" alt="google plus logo">
-                  </a>
-                </li>
-                <li class="social-list">
-                  <a href="mailto:inakajin@gmail.com" target="_top" aria-label="This is a link that open an email to Mike Dickerson">
-                    <img class="social-images" src="pics/gmail.png" alt="gmail logo">
-                  </a>
-                </li>
-                <li class="social-list">
-                  <a href="https://github.com/inakajin" target="_blank" aria-label="This is a link to Mike Dickerson's GitHub page">
-                    <img class="social-images" src="pics/github.png" alt="github logo">
-                  </a>
-                </li>
-            </ul>
-            <p>
-            After many years teaching and working abroad I made a career switch to tech. I have been at it a while, but am trying to gain some coding skills. I currently reside in Milwaukee, WI.
-            </p>
-        </div><!-- end footercontainer -->
+          <div class="footercontainer">
+            <div class="row">        	
+            <div class="col-6">
+              <div class="footertext">
+              <p>Created by Mike Dickerson using the <a href="https://developer.edamam.com/">edamam.com</a> API</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="footericons">		
+                <ul class="social-links">
+                    <li class="social-list">
+                      <img class="footerpic" src="pics/footerpic.jpg" alt="Picture of the developer, Mike Dickerson">
+                    </li>
+                    <li class="social-list">
+                      <a href="https://www.linkedin.com/in/mikeadickerson/" target="_blank" aria-label="This is a link Mike Dickerson's linkedin profile">
+                        <img class="social-images" src="pics/linkedin.png" alt="linkedin logo">
+                      </a>
+                    </li>
+                    <li class="social-list">
+                      <a href="https://www.facebook.com/mike.dickerson.1422" target="_blank" aria-label="This is a link Mike Dickerson's Facebook profile">
+                        <img class="social-images" src="pics/facebook.png" alt="facebook logo">
+                      </a>
+                    </li>
+                    <li class="social-list">
+                      <a href="https://plus.google.com/u/1/112774374102749420649?pageId=none" target="_blank" aria-label="This is a link Mike Dickerson's Google Plus Profile">
+                        <img class="social-images" src="pics/googleplus.png" alt="google plus logo">
+                      </a>
+                    </li>
+                    <li class="social-list">
+                      <a href="mailto:inakajin@gmail.com" target="_top" aria-label="This is a link that open an email to Mike Dickerson">
+                        <img class="social-images" src="pics/gmail.png" alt="gmail logo">
+                      </a>
+                    </li>
+                    <li class="social-list">
+                      <a href="https://github.com/inakajin" target="_blank" aria-label="This is a link to Mike Dickerson's GitHub page">
+                        <img class="social-images" src="pics/github.png" alt="github logo">
+                      </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            </div><!-- end footercontainer -->
       </footer>
       <script src="app.js"></script>
     </body>
