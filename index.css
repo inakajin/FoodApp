@@ -19,7 +19,7 @@ header {
   color: white; 
   vertical-align: middle;
   /*height: 75px;*/
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 header h1 {
@@ -74,6 +74,12 @@ input {
   padding-left: 10px;
 } 
 
+main {
+  background-image: url(pics/pizzabackground.png);
+  background-repeat: repeat-y;
+  padding-top: 20px;
+}
+
 .result {
   display: flex;
   margin: 0;
@@ -119,6 +125,10 @@ input {
   color: #000000;
   border: 1px solid #1a1a1a;
   font-size: 90%;
+}
+
+.reclist li {
+  list-style-type: circle;
 }
 
 .card {
@@ -173,7 +183,8 @@ footer {
   background-image: url(pics/asfalt-dark.png);
   border-top: 1px solid gray;
   vertical-align: middle;
-  height: 120px;
+  height: auto;
+  /*height: 120px;*/
   /*margin: 10%;*/
 }
 
@@ -213,7 +224,7 @@ footer {
   border-radius: 35px;
 }
 
-.social-links ul, li {
+.social-links li {
   list-style-type: none;
   display: inline-block;
   text-align: center;
