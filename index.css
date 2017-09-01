@@ -80,6 +80,10 @@ main {
   padding-top: 20px;
 }
 
+#search-main {
+  min-height: 250px;
+}
+
 .result {
   display: flex;
   margin: 0;
@@ -181,7 +185,11 @@ footer {
   font-family: 'Montserrat', sans-serif;
   background-color: #DEDEDE;
   background-image: url(pics/asfalt-dark.png);
-  border-top: 1px solid gray;
+  background: -webkit-linear-gradient(#DEDEDE, #BFBFBF , #999999); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#DEDEDE, #BFBFBF, #999999); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#DEDEDE, #BFBFBF, #999999); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#DEDEDE, #BFBFBF, #999999); /* Standard syntax */
+  /*border-top: 1px solid gray;*/
   vertical-align: middle;
   height: auto;
   /*height: 120px;*/
