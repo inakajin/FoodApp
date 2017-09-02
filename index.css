@@ -134,6 +134,13 @@ main {
 .linktoapppage a:focus { text-decoration: none; }
 .linktoapppage a:hover, a:active { text-decoration: none; }
 
+#js-search-results-neg {
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  color: #737373;
+}
 
 .result {
   display: flex;

@@ -73,7 +73,7 @@ function displayRecipeSearchData(data) {
     }
   }
   else {
-    results += '<p> No results </p>';
+    results += '<p id="js-search-results-neg"> No results </p>';
   }
   $('#js-search-results').html(results);
 }
