@@ -8,48 +8,31 @@ body {
   margin-right: 0px;
 }
 
+/*html {
+  position: relative;
+  min-height: 100%;
+}*/
+
 header {
   background-color: #008CBA;
   background-image: url(pics/brick-wall-dark.png);
-  /*margin-bottom: 40px;
-  padding-bottom: 20px;*/
-  /*padding-top: 20px;*/
   text-align: center;
-  /*border:1px solid black;*/
   color: white; 
   vertical-align: middle;
-  /*height: 75px;*/
-  /*margin-bottom: 20px;*/
 }
 
 header h1 {
   line-height: 80px;
-  /*margin-bottom: 10px;*/
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  /*float: left;*/
-  /*vertical-align: middle;*/
 }
 
 header h2 {
-  /*margin-top: 5px;*/
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   margin-top: 30px;
   margin-bottom: 30px;
-  /*float: right;*/
-  /*line-height: 1.5;*/
-  /*vertical-align: middle;*/
 }
-
-/*header #search-title {
-  float:left;
-}*/
-
-/*header #js-query {
-  width: 500px;
-  float: right;
-}*/
 
 .js-search-form {
   margin-top: 35px;
@@ -90,6 +73,52 @@ main {
 #search-main {
   min-height: 250px;
 }
+
+.landingtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color:#999999;
+  text-align: center;
+}
+
+.landingtext a {
+  text-decoration: none;
+  color:#999999;
+  height: 100%;
+}
+.landingtext a:visited { text-decoration: none; }
+.landingtext a:hover { text-decoration: none; }
+.landingtext a:focus { text-decoration: none; }
+.landingtext a:hover, a:active { text-decoration: none; }
+
+.linktoapppage {
+  /*color: black;*/
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 2px solid #999999;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.linktoapppage p {
+  margin: 0px;
+}
+
+.linktoapppage a {
+  text-decoration: none;
+  color:#999999;
+  height: 100%;
+}
+.linktoapppage a:visited { text-decoration: none; }
+.linktoapppage a:hover { text-decoration: none; }
+.linktoapppage a:focus { text-decoration: none; }
+.linktoapppage a:hover, a:active { text-decoration: none; }
+
 
 .result {
   display: flex;
@@ -172,9 +201,21 @@ main {
   opacity: 1;
 }
 
+.overlaytext p {
+  color: white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif; 
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .overlaytext a {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif; 
   text-decoration: none;
   position: absolute;
@@ -196,46 +237,29 @@ footer {
   background: -o-linear-gradient(#DEDEDE, #BFBFBF, #999999); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#DEDEDE, #BFBFBF, #999999); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#DEDEDE, #BFBFBF, #999999); /* Standard syntax */
-  /*border-top: 1px solid gray;*/
   vertical-align: middle;
   height: auto;
-  /*height: 120px;*/
-  /*margin: 10%;*/
 }
 
-/*.footercontainer {
-  /*max-width: 400px;*/
-  /*width: 100%;
-  max-height: 75px;*/
-  
-  
-  
-  /*border-radius: 25px;*/
-  /*margin: auto;*/
-  /*padding: 10px;*/
- 
-  /*display: inline-block;
-}*/
-
-
 .footertext {
-  /*float: left;*/
   vertical-align: middle;
   padding-top: 30px;
 }
 
+.footertext a {
+  text-decoration: none;
+  color: black;
+}
+.footertext a:visited { text-decoration: none; }
+.footertext a:hover { text-decoration: none; }
+.footertext a:focus { text-decoration: none; }
+.footertext a:hover, a:active { text-decoration: none; }
+
 .footericons {
-  /*float: right;*/
   vertical-align: middle;
-  /*margin: none;*/
-  /*padding-bottom: 30px;*/
-  /*padding-top: 5px;*/
-  /*padding: 10px;*/
 }
 
 .footerpic {
-  /*width: 35px;
-  height: 35px;*/
   border-radius: 35px;
 }
 
@@ -245,12 +269,6 @@ footer {
   text-align: center;
   vertical-align: middle;
 }
-
-
-/*.social-images {
-  width: 21px;
-  height: 19px;
-}*/
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: gray;
