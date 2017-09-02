@@ -3,15 +3,18 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin-top:0px;
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 
-/*html {
-  position: relative;
-  min-height: 100%;
-}*/
+html, body {
+  height: 100%;
+}
 
 header {
   background-color: #008CBA;
@@ -64,7 +67,12 @@ input {
   padding-left: 10px;
 } 
 
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
 main {
+  flex: 1;
   background-image: url(pics/pizzabackground.png);
   background-repeat: repeat-y;
   padding-top: 20px;
@@ -223,9 +231,16 @@ main {
   -ms-transform: translate(-50%, -50%);
 }
 
+#wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 
 /*This is the footer section*/
-footer {
+footer { 
+  width: 100%;
   text-align: center;
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
