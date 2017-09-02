@@ -30,6 +30,15 @@ header h1 {
   font-weight: bold;
 }
 
+header a {
+  text-decoration: none;
+  color: white;
+}
+header a:visited { text-decoration: none; }
+header a:hover { text-decoration: none; color:#DEDEDE; }
+header a:focus { text-decoration: none; }
+header a:hover, a:active { text-decoration: none; }
+
 header h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
@@ -91,13 +100,13 @@ main {
 
 .landingtext a {
   text-decoration: none;
-  color:#999999;
+  color:#777777;
   height: 100%;
 }
 .landingtext a:visited { text-decoration: none; }
-.landingtext a:hover { text-decoration: none; }
+.landingtext a:hover { text-decoration: underline; }
 .landingtext a:focus { text-decoration: none; }
-.landingtext a:hover, a:active { text-decoration: none; }
+.landingtext a:hover, a:active { text-decoration: underline; }
 
 .linktoapppage {
   font-family: 'Montserrat', sans-serif;
@@ -219,7 +228,7 @@ main {
   -ms-transform: translate(-50%, -50%);
 }
 
-.overlaytext a {
+.overlaytext span {
   color: white;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif; 
@@ -261,12 +270,12 @@ footer {
 
 .footertext a {
   text-decoration: none;
-  color: black;
+  color: #335566;
 }
 .footertext a:visited { text-decoration: none; }
-.footertext a:hover { text-decoration: none; }
+.footertext a:hover { text-decoration: underline; }
 .footertext a:focus { text-decoration: none; }
-.footertext a:hover, a:active { text-decoration: none; }
+.footertext a:hover, a:active { text-decoration: underline; }
 
 .footericons {
   vertical-align: middle;
