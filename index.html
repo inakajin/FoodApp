@@ -13,7 +13,7 @@
         <link href="float-grid.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-	<div class="wrapper">
+	<div id="wrapper">
 	<header>
     <div class="row">
       <div class="col-6">
@@ -39,10 +39,22 @@
 					</div><!-- end landingtext -->
 			</div><!-- end col-12 -->
 		</div><!-- end row -->
-	<div class="row">
+		<div class="row">
+			<div class="col-6">
+				<div class="card">
+						<img class="foodimg" src="pics/screensearch.png" alt="Picture of the search screen of the FridgeForage application">
+						<div class="overlay">
+							<div class="overlaytext">
+							<a href="app.html" aria-label="This is a link to the FridgeForage application">Try a search on FridgeForage</a>
+							</div><!-- end overlaytext -->
+						</div><!-- end overlay -->
+				</div><!-- end card -->
+		 	</div><!-- end col-6 -->
+		
+
     	<div class="col-3">
         	<div class="card">
-          		<img class="foodimg" src="pics/recipeimage.png" alt="Picture of a burger">
+          		<img class="foodimg" src="pics/recipeimage.png" alt="Picture of recipe search result">
           		<div class="overlay">
           			<div class="overlaytext">
 									<p>
@@ -55,7 +67,7 @@
 
      	<div class="col-3">
         	<div class="card">
-          		<img class="foodimg" src="pics/ingredientlist.png" alt="Picture of application search feature">
+          		<img class="foodimg" src="pics/ingredientlist.png" alt="Picture of an ingredient list for a recipe search result">
           		<div class="overlay">
           			<div class="overlaytext">
 									<p>
@@ -65,20 +77,9 @@
           		</div><!-- end overlay -->
        		</div><!-- end card -->
      	</div><!-- end col-3 -->
+		</div><!-- end row -->
 
-     	<div class="col-6">
-        	<div class="card">
-          		<img class="foodimg" src="pics/screensearch.png" alt="Picture of salmon filets">
-          		<div class="overlay">
-          			<div class="overlaytext">
-          			<a href="app.html" aria-label="This is a link to the FridgeForage application">Try a search on FridgeForage</a>
-          			</div><!-- end overlaytext -->
-          		</div><!-- end overlay -->
-       		</div><!-- end card -->
-     	</div><!-- end col-6 -->
-	</div><!-- end row -->
-
-	<div class="row">
+		<div class="row">
     	<div class="col-12">
         	<div class="linktoapppage">
           			<a href="app.html" aria-label="This is a link to the FridgeForage application">
@@ -88,10 +89,10 @@
           		
        		</div><!-- linktoapppage -->
      	</div><!-- end col-12 -->
-	</div><!-- end row -->
+		</div><!-- end row -->
 	</main>
 	</div><!--end wrapper-->
-	<footer class="footer">
+	<footer id="footer">
       <div class="footercontainer">
 				<div class="row">        	
 				<div class="col-6">

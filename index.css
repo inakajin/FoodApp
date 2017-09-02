@@ -79,7 +79,6 @@ main {
   font-size: 24px;
   font-weight: bold;
   color:#999999;
-  text-align: center;
 }
 
 .landingtext a {
@@ -93,7 +92,6 @@ main {
 .landingtext a:hover, a:active { text-decoration: none; }
 
 .linktoapppage {
-  /*color: black;*/
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: bold;
