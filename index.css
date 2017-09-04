@@ -160,8 +160,6 @@ main {
 }
 
 .recipelabel {
-  /*border-top-left-radius: 12px;
-  border-top-right-radius: 12px;*/
   border-radius: 12px;
 }
 
@@ -173,7 +171,6 @@ main {
 .label, .source {
   font-size: 12px;
   border: 1px solid #d9d9d9;
-  /*background-color: #A80000;*/
   background-color: #006600;
   background-image: url(pics/brick-wall-dark.png);
   font-family: 'Montserrat', sans-serif;
