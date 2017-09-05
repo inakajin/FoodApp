@@ -83,7 +83,7 @@ input:focus::-webkit-input-placeholder {
 main {
   flex: 1;
   background-image: url(pics/pizzabackground.png);
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   padding-top: 20px;
 }
 
