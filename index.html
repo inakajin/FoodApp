@@ -1,156 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Recipe Search</title>
-        <script
-          src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-					crossorigin="anonymous"></script>
-				<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link href="index.css" rel="stylesheet" type="text/css" />
-				<link href="float-grid.css" rel="stylesheet" type="text/css"/>
-				<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Recipe Search</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="index.css" rel="stylesheet" type="text/css" />
+	<link href="float-grid.css" rel="stylesheet" type="text/css" />
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
 </head>
+
 <body>
 	<div id="wrapper">
-	<header>
-    <div class="row">
-      <div class="col-6">
-				<h1>
-					<a href="index.html" aria-label="Link to the homepage of the FridgeForage application">
-					<i class="icon-food" aria-label="picture of fork and knife"></i> FridgeForage
-					</a>
-				</h1>
+		<header>
+			<div class="row">
+				<div class="col-6">
+					<h1>
+						<a href="index.html" aria-label="Link to the homepage of the FridgeForage application">
+							<i class="icon-food" aria-label="picture of fork and knife"></i> FridgeForage
+						</a>
+					</h1>
+				</div>
+				<div class="col-6">
+					<h2>Find something to make with what you have on hand!</h2>
+				</div>
 			</div>
-			<div class="col-6">
-        <h2>Find something to make with what you have on hand!</h2>
-      </div>
-    </div>
-	</header>
+		</header>
 
-	<main role="main">
-	<div class="row">
-			<div class="col-12">
+		<main role="main">
+			<div class="row">
+				<div class="col-12">
 					<div class="landingtext">
-											<p>
-													<a href="app.html" aria-label="This is a link to the FridgeForage application">
-													FridgeForage</a> searches multiple databases for recipes you can make with what you have on hand. Simply enter a list of ingredients and up to a dozen results are returned.
-											</p>					
-					</div><!-- end landingtext -->
-			</div><!-- end col-12 -->
-		</div><!-- end row -->
-		
-		<div class="row">
-			<div class="col-6">
-					<a href="app.html" aria-label="This is a link to the FridgeForage application">
-				<div class="card">
-						<img class="foodimg" src="pics/screensearch.png" alt="Picture of the search screen of the FridgeForage application">
-						<div class="overlay">
-							<div class="overlaytext">
-							<span>Try a search on FridgeForage</span>
-							</div><!-- end overlaytext -->
-						</div><!-- end overlay -->
-				</div><!-- end card -->
-				</a>
-		 	</div><!-- end col-6 -->
-		
+						<p>
+							<a href="app.html" aria-label="This is a link to the FridgeForage application">
+								FridgeForage</a> searches multiple databases for recipes you can make with what you have on hand. Simply enter a
+							list of ingredients and up to a dozen results are returned.
+						</p>
+					</div>
+					<!-- end landingtext -->
+				</div>
+				<!-- end col-12 -->
+			</div>
+			<!-- end row -->
 
-    	<div class="col-3">
+			<div class="row">
+				<div class="col-6">
+					<a href="app.html" aria-label="This is a link to the FridgeForage application">
+						<div class="card">
+							<img class="foodimg" src="pics/screensearch.png" alt="Picture of the search screen of the FridgeForage application">
+							<div class="overlay">
+								<div class="overlaytext">
+									<span>Try a search on FridgeForage</span>
+								</div>
+								<!-- end overlaytext -->
+							</div>
+							<!-- end overlay -->
+						</div>
+						<!-- end card -->
+					</a>
+				</div>
+				<!-- end col-6 -->
+
+
+				<div class="col-3">
 					<a href="app.html" aria-label="This is a link to the FridgeForage application accessed through a recipe image">
-        	<div class="card">
-          		<img class="foodimg" src="pics/recipeimage.png" alt="Picture of recipe search result">
-          		<div class="overlay">
-          			<div class="overlaytext">
+						<div class="card">
+							<img class="foodimg" src="pics/recipeimage.png" alt="Picture of recipe search result">
+							<div class="overlay">
+								<div class="overlaytext">
 									<span>
 										Click on the recipe image to be redirected to the recipe source page
 									</span>
-          			</div><!-- end overlaytext -->	
-          		</div><!-- end overlay -->
-					 </div><!-- end card -->
+								</div>
+								<!-- end overlaytext -->
+							</div>
+							<!-- end overlay -->
+						</div>
+						<!-- end card -->
 					</a>
-     	</div><!-- end col-3 -->
+				</div>
+				<!-- end col-3 -->
 
-     	<div class="col-3">
+				<div class="col-3">
 					<a href="app.html" aria-label="This is a link to the FridgeForage application accessed through a ingredient list image">
-        	<div class="card">
-          		<img class="foodimg" src="pics/ingredientlist.png" alt="Picture of an ingredient list for a recipe search result">
-          		<div class="overlay">
-          			<div class="overlaytext">
+						<div class="card">
+							<img class="foodimg" src="pics/ingredientlist.png" alt="Picture of an ingredient list for a recipe search result">
+							<div class="overlay">
+								<div class="overlaytext">
 									<span>
-									Hover over a recipe title to see a list of ingredients
+										Hover over a recipe title to see a list of ingredients
 									</span>
-          			</div><!-- end overlaytext -->	
-          		</div><!-- end overlay -->
-					 </div><!-- end card -->
+								</div>
+								<!-- end overlaytext -->
+							</div>
+							<!-- end overlay -->
+						</div>
+						<!-- end card -->
 					</a>
-     	</div><!-- end col-3 -->
-		</div><!-- end row -->
+				</div>
+				<!-- end col-3 -->
+			</div>
+			<!-- end row -->
 
-		<div class="row">
-    	<div class="col-12">
-        	<div class="linktoapppage">
-          			<a href="app.html" aria-label="This is a link to the FridgeForage application">
-									<p>Let's try FridgeForage</p>
-          			<!--<a href="app.html" aria-label="This is a link to the FridgeForage application">Recipes that have the ingredients you searched for are returned</a>-->
-								</a>	
-          		
-       		</div><!-- linktoapppage -->
-     	</div><!-- end col-12 -->
-	</div><!-- end row -->
-	</main>
-	</div><!--end wrapper-->
+			<div class="row">
+				<div class="col-12">
+					<div class="linktoapppage">
+						<a href="app.html" aria-label="This is a link to the FridgeForage application">
+							<p>Let's try FridgeForage</p>
+							<!--<a href="app.html" aria-label="This is a link to the FridgeForage application">Recipes that have the ingredients you searched for are returned</a>-->
+						</a>
+
+					</div>
+					<!-- linktoapppage -->
+				</div>
+				<!-- end col-12 -->
+			</div>
+			<!-- end row -->
+		</main>
+	</div>
+	<!--end wrapper-->
 	<footer class="footercontainer">
-				<div class="row">        	
-				<div class="col-6">
-					<div class="footertext">
-					<p>Created by Mike Dickerson using the <a href="https://developer.edamam.com/">edamam.com</a> API</p>
+		<div class="row">
+			<div class="col-6">
+				<div class="footertext">
+					<p>Created by Mike Dickerson using the
+						<a href="https://developer.edamam.com/">edamam.com</a> API</p>
 					<p>
-							<a href="index.html" aria-label="This is a link to the homepage of the FridgeForage application">
-						Home 
-							</a>
-							<a href="app.html" aria-label="This is a link to the search page of the FridgeForage application">
-						Search
-							</a>
+						<a href="index.html" aria-label="This is a link to the homepage of the FridgeForage application">
+							Home
+						</a>
+						<a href="app.html" aria-label="This is a link to the search page of the FridgeForage application">
+							Search
+						</a>
 					</p>
-					</div>
 				</div>
-				<div class="col-6">
-					<div class="footericons">		
-						<ul class="social-links">
-                <li class="social-list">
-                  <img class="footerpic" src="pics/footerpic.jpg" alt="Picture of the developer, Mike Dickerson">
-                </li>
-                <li class="social-list">
-                  <a href="https://www.linkedin.com/in/mikeadickerson/" target="_blank" aria-label="This is a link Mike Dickerson's linkedin profile">
-                    <img class="social-images" src="pics/linkedin.png" alt="linkedin logo">
-                  </a>
-                </li>
-                <li class="social-list">
-                  <a href="https://www.facebook.com/mike.dickerson.1422" target="_blank" aria-label="This is a link Mike Dickerson's Facebook profile">
-                    <img class="social-images" src="pics/facebook-icon.png" alt="facebook logo">
-                  </a>
-                </li>
-                <li class="social-list">
-                  <a href="https://plus.google.com/u/1/112774374102749420649?pageId=none" target="_blank" aria-label="This is a link Mike Dickerson's Google Plus Profile">
-                    <img class="social-images" src="pics/googleplusicon.png" alt="google plus logo">
-                  </a>
-                </li>
-                <li class="social-list">
-                  <a href="mailto:inakajin@gmail.com" target="_top" aria-label="This is a link that open an email to Mike Dickerson">
-                    <img class="social-images" src="pics/gmail.png" alt="gmail logo">
-                  </a>
-                </li>
-                <li class="social-list">
-                  <a href="https://github.com/inakajin" target="_blank" aria-label="This is a link to Mike Dickerson's GitHub page">
-                    <img class="social-images" src="pics/github.png" alt="github logo">
-                  </a>
-                </li>
-						</ul>
-					</div>
+			</div>
+			<div class="col-6">
+				<div class="footericons">
+					<ul class="social-links">
+						<a href="https://www.linkedin.com/in/mikeadickerson/" target="_blank" aria-label="This is a link Mike Dickerson's linkedin profile">
+							<li class="social-list fab fa-linkedin">
+
+
+							</li>
+						</a>
+						<a href="mailto:inakajin@gmail.com" target="_top" aria-label="This is a link that open an email to Mike Dickerson">
+							<li class="social-list fas fa-envelope-open">
+							</li>
+						</a>
+						<a href="https://github.com/inakajin" target="_blank" aria-label="This is a link to Mike Dickerson's GitHub page">
+							<li class="social-list fab fa-github-square">
+
+							</li>
+						</a>
+
+					</ul>
 				</div>
-				</div>
-  </footer>
+			</div>
+		</div>
+	</footer>
 </body>
+
 </html>

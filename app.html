@@ -12,6 +12,8 @@
         <link href="index.css" rel="stylesheet" type="text/css" />
         <link href="float-grid.css" rel="stylesheet" type="text/css"/>
         <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
     </head>
     <body>
       <div id="wrapper">
@@ -30,7 +32,7 @@
             <input type="text" aria-label="enter ingredients searchbox" class="js-query" 
             placeholder="chicken broccoli garlic etc..." 
             required  autocomplete="on">
-            <button type="submit">Find a recipe</button>
+            <button type="submit"><i class="icon-food" aria-label="picture of fork and knife"></i></button>
           </form>
         </div>
       </div>
@@ -42,56 +44,45 @@
         </div><!--end search-main--> 
       </main>
       <footer class="footercontainer">
-          <div class="row">        	
+        <div class="row">
           <div class="col-6">
             <div class="footertext">
-            <p>Created by Mike Dickerson using the <a href="https://developer.edamam.com/">edamam.com</a> API</p>
-            <p>
+              <p>Created by Mike Dickerson using the
+                <a href="https://developer.edamam.com/">edamam.com</a> API</p>
+              <p>
                 <a href="index.html" aria-label="This is a link to the homepage of the FridgeForage application">
-              Home 
+                  Home
                 </a>
                 <a href="app.html" aria-label="This is a link to the search page of the FridgeForage application">
-              Search
+                  Search
                 </a>
-            </p>
+              </p>
             </div>
           </div>
           <div class="col-6">
-            <div class="footericons">		
+            <div class="footericons">
               <ul class="social-links">
-                  <li class="social-list">
-                    <img class="footerpic" src="pics/footerpic.jpg" alt="Picture of the developer, Mike Dickerson">
+                <a href="https://www.linkedin.com/in/mikeadickerson/" target="_blank" aria-label="This is a link Mike Dickerson's linkedin profile">
+                  <li class="social-list fab fa-linkedin">
+    
+    
                   </li>
-                  <li class="social-list">
-                    <a href="https://www.linkedin.com/in/mikeadickerson/" target="_blank" aria-label="This is a link Mike Dickerson's linkedin profile">
-                      <img class="social-images" src="pics/linkedin.png" alt="linkedin logo">
-                    </a>
+                </a>
+                <a href="mailto:inakajin@gmail.com" target="_top" aria-label="This is a link that open an email to Mike Dickerson">
+                  <li class="social-list fas fa-envelope-open">
                   </li>
-                  <li class="social-list">
-                    <a href="https://www.facebook.com/mike.dickerson.1422" target="_blank" aria-label="This is a link Mike Dickerson's Facebook profile">
-                      <img class="social-images" src="pics/facebook-icon.png" alt="facebook logo">
-                    </a>
+                </a>
+                <a href="https://github.com/inakajin" target="_blank" aria-label="This is a link to Mike Dickerson's GitHub page">
+                  <li class="social-list fab fa-github-square">
+    
                   </li>
-                  <li class="social-list">
-                    <a href="https://plus.google.com/u/1/112774374102749420649?pageId=none" target="_blank" aria-label="This is a link Mike Dickerson's Google Plus Profile">
-                      <img class="social-images" src="pics/googleplusicon.png" alt="google plus logo">
-                    </a>
-                  </li>
-                  <li class="social-list">
-                    <a href="mailto:inakajin@gmail.com" target="_top" aria-label="This is a link that open an email to Mike Dickerson">
-                      <img class="social-images" src="pics/gmail.png" alt="gmail logo">
-                    </a>
-                  </li>
-                  <li class="social-list">
-                    <a href="https://github.com/inakajin" target="_blank" aria-label="This is a link to Mike Dickerson's GitHub page">
-                      <img class="social-images" src="pics/github.png" alt="github logo">
-                    </a>
-                  </li>
+                </a>
+    
               </ul>
             </div>
           </div>
-          </div>
-    </footer>
+        </div>
+      </footer>
       <script src="app.js"></script>
       </div><!--end wrapper-->
     </body>

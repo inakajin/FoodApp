@@ -22,6 +22,7 @@ header {
   text-align: center;
   color: white; 
   vertical-align: middle;
+  height: 100px;
 }
 
 header h1 {
@@ -54,21 +55,35 @@ header h2 {
 button {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  width: 150px;
-  height: 50px;
-  border-radius: 12px;
+  width: 35px;
+  height: 35px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position:relative;
+  /*padding:6px 15px;*/
+  left:-8px;
   border: none;
-  background-color: #DEDEDE;
-  background: -webkit-linear-gradient(#DEDEDE, #BFBFBF , #999999); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#DEDEDE, #BFBFBF, #999999); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#DEDEDE, #BFBFBF, #999999); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#DEDEDE, #BFBFBF, #999999); /* Standard syntax */
+  color: white;
+  background-color: #006600;
+  background: -webkit-linear-gradient(#006600, #317831 , #429942); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#006600, #317831, #429942); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#006600, #317831, #429942); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#006600, #317831, #429942);/* Standard syntax */
+  
+  
+  
+  /*background-color: #DEDEDE;
+  /*background: -webkit-linear-gradient(#DEDEDE, #BFBFBF , #999999); /* For Safari 5.1 to 6.0 */
+ /* background: -o-linear-gradient(#DEDEDE, #BFBFBF, #999999); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(#DEDEDE, #BFBFBF, #999999); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(#DEDEDE, #BFBFBF, #999999);/* Standard syntax */
 }
 
 input {
-  width: 300px;
-  height: 50px;
-  border-radius: 12px;
+  width: 250px;
+  height: 35px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
   margin-bottom: 5px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -318,6 +333,19 @@ footer {
   text-align: center;
   vertical-align: middle;
 }
+
+.social-links a{
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5vw;
+  width: 33.3%;
+  color: #335566;
+}                
+ .social-links a:visited { text-decoration: none; }
+ .social-links a:hover { text-decoration: underline; }
+  .social-links a:focus { text-decoration: none; }
+  .social-links a:hover, a:active { text-decoration: underline; }
+  
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: gray;

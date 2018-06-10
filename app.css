@@ -120,6 +120,18 @@ footer {
   text-align: center;
 }
 
+.social-links a{
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5vw;
+  width: 33.3%;
+  color: #335566;
+}                
+ .social-links a:visited { text-decoration: none; }
+ .social-links a:hover { text-decoration: underline; }
+  .social-links a:focus { text-decoration: none; }
+  .social-links a:hover, a:active { text-decoration: underline; }
+
 .social-images {
   width: 21px;
   height: 19px;
