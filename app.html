@@ -1,89 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Recipe Search</title>
-        <script
-          src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link href="index.css" rel="stylesheet" type="text/css" />
-        <link href="float-grid.css" rel="stylesheet" type="text/css"/>
-        <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-	 crossorigin="anonymous">
-    </head>
-    <body>
-      <div id="wrapper">
-      <header>
-        <div class = "row">
-        <div class = "col-6">
-            <h1>
-                <a href="index.html" aria-label="Link to the homepage of the FridgeForage application">
-                <i class="icon-food" aria-label="picture of fork and knife"></i> FridgeForage
-                </a>
-            </h1>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Recipe Search</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link href="float-grid.css" rel="stylesheet" type="text/css" />
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <div class="row">
+        <div class="col-6">
+          <h1>
+            <a href="index.html" aria-label="Link to the homepage of the FridgeForage application">
+              <i class="icon-food" aria-label="picture of fork and knife"></i> FridgeForage
+            </a>
+          </h1>
         </div>
-        <div class = "col-6">
+        <div class="col-6">
           <form action="" class="js-search-form">
             <label for="query"></label>
-            <input type="text" aria-label="enter ingredients searchbox" class="js-query" 
-            placeholder="chicken broccoli garlic etc..." 
-            required  autocomplete="on">
-            <button type="submit"><i class="icon-food" aria-label="picture of fork and knife"></i></button>
+            <input type="text" aria-label="enter ingredients searchbox" class="js-query" placeholder="chicken broccoli garlic etc..."
+              required autocomplete="on">
+            <button type="submit">
+              <i class="icon-food" aria-label="picture of fork and knife"></i>
+            </button>
           </form>
         </div>
       </div>
-      </header>
-      <main>  
-        <div id="search-main">  
-          <div id="js-search-results">
-          </div><!-- end js-search-results -->
-        </div><!--end search-main--> 
-      </main>
-      <footer class="footercontainer">
-        <div class="row">
-          <div class="col-6">
-            <div class="footertext">
-              <p>Created by Mike Dickerson using the
-                <a href="https://developer.edamam.com/">edamam.com</a> API</p>
-              <p>
-                <a href="index.html" aria-label="This is a link to the homepage of the FridgeForage application">
-                  Home
-                </a>
-                <a href="app.html" aria-label="This is a link to the search page of the FridgeForage application">
-                  Search
-                </a>
-              </p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="footericons">
-              <ul class="social-links">
-                <a href="https://www.linkedin.com/in/mikeadickerson/" target="_blank" aria-label="This is a link Mike Dickerson's linkedin profile">
-                  <li class="social-list fab fa-linkedin">
-    
-    
-                  </li>
-                </a>
-                <a href="mailto:inakajin@gmail.com" target="_top" aria-label="This is a link that open an email to Mike Dickerson">
-                  <li class="social-list fas fa-envelope-open">
-                  </li>
-                </a>
-                <a href="https://github.com/inakajin" target="_blank" aria-label="This is a link to Mike Dickerson's GitHub page">
-                  <li class="social-list fab fa-github-square">
-    
-                  </li>
-                </a>
-    
-              </ul>
-            </div>
+    </header>
+    <main>
+      <div id="search-main">
+        <div id="js-search-results">
+        </div>
+        <!-- end js-search-results -->
+      </div>
+      <!--end search-main-->
+    </main>
+    <footer class="footercontainer">
+      <div class="row">
+        <div class="col-6">
+          <div class="footertext">
+            <p>Created by Mike Dickerson using the
+              <a href="https://developer.edamam.com/">edamam.com</a> API</p>
+            <p>
+              <a href="index.html" aria-label="This is a link to the homepage of the FridgeForage application">
+                Home
+              </a>
+              <a href="app.html" aria-label="This is a link to the search page of the FridgeForage application">
+                Search
+              </a>
+            </p>
           </div>
         </div>
-      </footer>
-      <script src="app.js"></script>
-      </div><!--end wrapper-->
-    </body>
+        <div class="col-6">
+          <div class="footericons">
+            <ul class="social-links">
+              <a href="https://www.linkedin.com/in/mikeadickerson/" target="_blank" aria-label="This is a link Mike Dickerson's linkedin profile">
+                <li class="social-list fab fa-linkedin">
+
+
+                </li>
+              </a>
+              <a href="mailto:inakajin@gmail.com" target="_top" aria-label="This is a link that open an email to Mike Dickerson">
+                <li class="social-list fas fa-envelope-open">
+                </li>
+              </a>
+              <a href="https://github.com/inakajin" target="_blank" aria-label="This is a link to Mike Dickerson's GitHub page">
+                <li class="social-list fab fa-github-square">
+
+                </li>
+              </a>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </div>
+  <!--end wrapper-->
+</body>
+
 </html>
